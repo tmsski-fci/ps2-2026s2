@@ -1,8 +1,8 @@
 import java.sql.*;
 
-public class App {
+public class AppRead {
     public static void main(String[] args) throws Exception {
-        String url = "jdbc:postgresql://aws-0-sa-east-1.pooler.supabase.com:6543/postgres?user=POSTGRESUSER&password=SENHA";
+        String url = "jdbc:postgresql://aws-0-sa-east-1.pooler.supabase.com:5432/postgres?user=postgres.ldjlyxztgvlefjbhdzhn&password=senha";
         Connection conexao = DriverManager.getConnection(url);
         IO.println("Conexão bem-sucedida!");
         String sql = "SELECT * FROM contas";
